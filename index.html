@@ -1,0 +1,30 @@
+<html>
+  <script language="javascript" src="./dist/main.js"></script>
+  <link rel="stylesheet" type="text/css" href="./dist/main.css" /> 
+  <body>
+    <div id="options">
+      <div class="inputElement">
+        <label</label>
+        <span id="channelCountValue"></span>
+        <input type="range" min="1" max="32" class="slider" id="channelCountSlider">
+      </div>
+      <div class="inputElement">
+        <label</label>
+        <span id="fadeSpeedValue"></span>
+        <input type="range" min="0" max="100" class="slider" id="fadeSpeedSlider">
+      </div>
+      <div class="inputElement">
+        <label>Immediate</label>
+        <input type="checkbox" id="setImmediateCheckbox">
+      </div>
+      <div class="inputElement">
+        <label>Sync</label>
+        <input type="checkbox" id="pickerSyncCheckbox">
+      </div>
+      <div class="inputElement">
+        <button id="setChannelsButton">Set</button>
+      </div>
+    </div>
+    <div id="pickers"></div>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+{
+  "name": "moodctrl-front",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mguentner/moodctrl-front",
+  "author": "Maximilian Güntner",
+  "license": "GPLv3",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.6.2",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-typescript": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "concurrently": "^4.1.2",
+    "lite-server": "^2.5.4",
+    "nodemon": "^1.19.3",
+    "typescript": "^3.6.3",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "@jaames/iro": "^4.5.1",
+    "axios": "^0.19.0"
+  },
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "build:wp:prod": "webpack --mode production",
+    "build:wp:dev": "webpack --mode development",
+    "build:js": "babel src --out-dir lib --extensions \".ts,.tsx\" --source-maps inline",
+    "start": "concurrently \"nodemon --watch src -e ts,tsx --exec yarn run build:wp:dev\" \"yarn run lite\" "
+  }
+}

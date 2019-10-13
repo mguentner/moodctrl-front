@@ -1,0 +1,40 @@
+.picker {
+  float: left;
+}
+
+body {
+  background-color: #444444;
+}
+
+#options {
+  width: 100%;
+  color: #3377ff;
+  border: 1px solid #3377ff;
+  height: 45px;
+}
+
+#options div {
+  float: left;
+}
+
+.inputElement {
+  max-width: 170px;
+  min-width: 70px;
+  text-align: center;
+}
+
+.inputElement label {
+  width: 100%;
+  display: block;
+  padding: 0px;
+}
+
+.inputElement button {
+  background-color: transparent;
+  color: #3377ff;
+  border: 2px solid #3377ff;
+}
+
+.inputElement input {
+  vertical-align: center;
+}
